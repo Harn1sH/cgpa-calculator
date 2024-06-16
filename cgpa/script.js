@@ -3,7 +3,7 @@
             let sem2Val = Number(document.getElementById("f2").value)
             let sem3Val = Number(document.getElementById("f3").value)
             let sem4Val = Number(document.getElementById("f4").value)
-            let cgpaVal = (sem1Val+sem2Val+sem3Val+sem4Val)/4
+            let cgpaVal = Number.parseFloat(sem1Val+sem2Val+sem3Val+sem4Val)/4
             let resultVal = document.getElementById("result4") 
             resultVal.innerHTML = cgpaVal.tofixed(3) + " cgpa"
         }
